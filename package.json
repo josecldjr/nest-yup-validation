@@ -1,0 +1,24 @@
+{
+  "name": "yup-validator-for-nest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://josecldjr@bitbucket.org/josecldjr/nest-yup-validation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/josecldjr/nest-yup-validation#readme",
+  "dependencies": {
+    "@nestjs/common": "^6.11.7",
+    "yup": "^0.28.1"
+  },
+  "devDependencies": {
+    "@types/yup": "^0.26.31"
+  }
+}
