@@ -1,4 +1,4 @@
-import { Schema } from "yup";
+import { ObjectSchema } from "yup";
 
 /**
  * Tests if a object is a you schema.
@@ -16,9 +16,9 @@ export declare function validateWithSchema(schema: any, object: any): any;
  * Validate/transform the body of a requisition and stores the result in a object.
  * You may use a yup schema or a function.
  */
-export declare function BodyValidator(schema: Schema<any> | ((data: Object) => any)  ): ParameterDecorator;
+export declare function BodyValidator(schema: (ObjectSchema<Object> | ((data: Object) => any))[]  ): ParameterDecorator;
 /**
  * Validate/transform the query string parameters passed in the url of a requisition and stores the result in a object.
  * You may use a yup schema or a function.
  */
-export declare function QueryValidator(schema: Schema<any> | ((data: Object) => any)  ): ParameterDecorator;
+export declare function QueryValidator(schema: (ObjectSchema<Object> | ((data: Object) => any))[]  ): ParameterDecorator;
