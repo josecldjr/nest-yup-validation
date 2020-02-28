@@ -12,18 +12,18 @@ Yup is a schema builder for validating and parsing objects. Its simple, lightwei
 ##### The purpose
  Ofer an alternative to class-validator with a package to integrate NestJS and Yup, wich may not be as powerfull as the current validation system but can it can be really handfull and simple to use. Also offer some manual validation option, with in some cases may be usefull.
  
- ## How to use
- ##### Installation
+## How to use
+##### Installation
  In you project directory
 ```sh
-$ npm install <PACK_NAME> --save
+$ npm install <nestjs-yup-validator> --save
 ```
- ##### Creating a validation
- ######  With schema:
+##### Creating a validation
+######  With schema:
  
  
  
- ```javascript
+```
     // Creating  a yup schema
     export const SaveUserValidation  = yup.object({
         username: yup.string().required().min(3).max(15),
@@ -33,7 +33,7 @@ $ npm install <PACK_NAME> --save
     })
 ```
 Optional DTO usage (for typescript)
- ```typescript
+```
     // request dto
     export class SaveUserReqDTO {
         username: string
@@ -50,8 +50,8 @@ Optional DTO usage (for typescript)
         age: yup.number().min(1)
     })
 ```
- ######  With custom function:
-```typescript
+######  With custom function:
+```
     export function SaveUserValidation(body) {
         validateUserObject(body)
         const validatedUserObject = transformUserObject()
@@ -70,7 +70,7 @@ You may apply the validation using a Decorator on the controller. Use BodyValida
 
 See the example bellow:
 
-```typescript
+```
       @Post('post')
       createPost(@BodyValidator([SavePostValidation]) body: SaveUserReqDTO) {
         const newPost  = this.postService.save(body)

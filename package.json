@@ -1,5 +1,5 @@
 {
-  "name": "yup-validator-for-nest",
+  "name": "nestjs-yup-validator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
