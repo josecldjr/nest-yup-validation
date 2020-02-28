@@ -2,7 +2,7 @@
   "name": "nestjs-yup-validator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "decorators.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,10 +15,13 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/josecldjr/nest-yup-validation#readme",
   "dependencies": {
-    "@nestjs/common": "^6.11.7",
+    "@nestjs/common": "^6.11.8",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.4",
     "yup": "^0.28.1"
   },
   "devDependencies": {
+    "@types/node": "^13.7.6",
     "@types/yup": "^0.26.31"
   }
 }

@@ -1,1 +1,6 @@
 node_modules
+tsconfig.tsbuildinfo
+tsconfig.json
+decorators.js.map
+decorators.js
+decorators.d.ts
