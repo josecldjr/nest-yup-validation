@@ -29,7 +29,10 @@ export function validateWithSchema(schema: any, object): any {
   return schema.validateSync(object)
 }
 
-
+/**
+ * Validate/transform the body of a requisition and stores the result in a object.
+ * You may use a yup schema or a function.
+ */
 export const BodyValidator = createParamDecorator((
   validationFunctions: Array<Schema<any> | ((body: any) => any)>,
   req,
@@ -37,6 +40,10 @@ export const BodyValidator = createParamDecorator((
   return validateObject(validationFunctions, req, 'body')
 });
 
+/**
+ * Validate/transform the query string parameters passed in the url of a requisition and stores the result in a object.
+ * You may use a yup schema or a function.
+ */
 export const QueryValidator = createParamDecorator((
   validationFunctions: Array<Schema<any> | ((body: any) => any)>,
   req,
@@ -44,6 +51,9 @@ export const QueryValidator = createParamDecorator((
   return validateObject(validationFunctions, req, 'string-query')
 });
 
+/**
+ * Execute the validation with the functions/schemas that was passed * 
+ */
 function validateObject(validationFunctions: Array<Schema<any> | ((body: any) => any)>, req: any, validationType: 'string-query' | 'body') {
   let finalResult = { ...(validationType === 'body' ? req.body : req.query) }
   let funcList = []
@@ -86,10 +96,4 @@ function validateObject(validationFunctions: Array<Schema<any> | ((body: any) =>
   return finalResult
 }
 
-
-/**
- * Validate the body request based on yup schema or a custom function
- * @param {Array<any>} validation yup schema or function
- */
-export const TetSDasd = BodyValidator
 
