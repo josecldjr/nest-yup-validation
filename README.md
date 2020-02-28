@@ -16,7 +16,7 @@ Yup is a schema builder for validating and parsing objects. Its simple, lightwei
 ##### Installation
  In you project directory
 ```sh
-$ npm install <nestjs-yup-validator> --save
+$ npm install nestjs-yup-validator --save
 ```
 ##### Creating a validation
 ######  With schema:
