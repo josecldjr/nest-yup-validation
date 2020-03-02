@@ -3,6 +3,7 @@
   "version": "1.0.8",
   "description": "",
   "main": "lib/decorators.js",
+  "types": "lib/decoratorsc.ts",
   "scripts": {
     "build": "tsc"
   },
