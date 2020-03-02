@@ -2,7 +2,7 @@
   "name": "nestjs-yup-validator",
   "version": "1.0.7",
   "description": "",
-  "main": "decorators.js",
+  "main": "lib/decorators.js",
   "scripts": {
     "build": "tsc"
   },
