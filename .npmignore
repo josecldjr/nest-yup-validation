@@ -1,4 +1,3 @@
 src
 .gitignore
 tsconfig.json
-/decorators.d.ts
