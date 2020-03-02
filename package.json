@@ -4,7 +4,7 @@
   "description": "",
   "main": "decorators.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "^13.7.6",
-    "@types/yup": "^0.26.31"
+    "@types/yup": "^0.26.31",
+    "typescript": "^3.8.3"
   }
 }

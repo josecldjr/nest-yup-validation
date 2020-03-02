@@ -1,24 +1,18 @@
+/**
+ * WHAT IS THIS?
+ * This is a Manually create type files tha shold be replaced in the decorators.d.ts file in final version
+ * 
+ */
+
+
 import { ObjectSchema } from "yup";
 
-/**
- * Tests if a object is a you schema.
- * Returns true if its the case.
- * @param testObject The object that will be tested
- */
+
 export declare function isYupSchema(testObject: any): boolean;
-/**
- * Validate a object with a given schema. Throws an error if the object is not valid
- * @param schema Validation schema
- * @param object Object with data
- */
+
 export declare function validateWithSchema(schema: any, object: any): any;
-/**
- * Validate/transform the body of a requisition and stores the result in a object.
- * You may use a yup schema or a function.
- */
-export declare function BodyValidator(schema: (ObjectSchema<Object> | ((data: Object) => any))[]  ): ParameterDecorator;
-/**
- * Validate/transform the query string parameters passed in the url of a requisition and stores the result in a object.
- * You may use a yup schema or a function.
- */
-export declare function QueryValidator(schema: (ObjectSchema<Object> | ((data: Object) => any))[]  ): ParameterDecorator;
+
+
+export declare const BodyValidator: (schema: (ObjectSchema<Object> | ((data: Object) => any))[]  ) => any;
+
+export declare const QueryValidator: (schema: (ObjectSchema<Object> | ((data: Object) => any))[]  ) => any;
