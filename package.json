@@ -1,6 +1,6 @@
 {
   "name": "nestjs-yup-validator",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "lib/decorators.js",
   "types": "lib/decoratorsc.ts",
