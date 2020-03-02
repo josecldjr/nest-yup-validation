@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://josecldjr@bitbucket.org/josecldjr/nest-yup-validation.git"
   },
-  "keywords": [],
+  "keywords": ["netjs", "yup", "validation", "nest-yup-validation", "alternative"],
   "author": "",
   "license": "ISC",
   "homepage": "https://bitbucket.org/josecldjr/nest-yup-validation#readme",
