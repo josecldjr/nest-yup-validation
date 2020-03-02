@@ -3,7 +3,7 @@
   "version": "1.0.11",
   "description": "",
   "main": "lib/decorators.js",
-  "types": "lib/decoratorsc.ts",
+  "types": "lib/decorators.d.ts",
   "scripts": {
     "build": "tsc"
   },
