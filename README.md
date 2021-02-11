@@ -1,4 +1,4 @@
-# Yup Validation for next
+# Yup Validation for next (deprecated -  This package may not work in newer versions of NestJS)
 
 ## Introduction
 ##### The problem
